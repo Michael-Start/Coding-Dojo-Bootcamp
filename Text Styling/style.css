@@ -1,0 +1,24 @@
+h1 {
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: cursive;
+    }
+
+.blue{
+    color:aqua;
+}
+
+h2 {
+    text-align: center;
+    background-color: rebeccapurple;
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: xx-large;
+    }
+h3{
+    text-align: right;
+    background-color: lightskyblue;
+    color: black;
+    font-family: sans-serif;
+    }
