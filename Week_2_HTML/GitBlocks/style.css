@@ -1,0 +1,35 @@
+
+
+body {
+    background-color: antiquewhite;
+}
+
+div{
+    height: 250px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: gray;
+}
+
+p{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.row-1{
+    background-color: deepskyblue;
+}
+
+.row-2{
+    background-color: rgb(222, 122, 97);
+}
+
+.row-3{
+    background-color: rgba(126, 252, 0, 0.534);
+}
