@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <h1 class="nav">Profile</h1>
+        <p class="nav"><a href="*" class="navlinks">Home </a></p>
+        <p class="nav"><a href="*" class="navlinks">My Profile </a></p>
+        <p class="nav"><a href="*" class="navlinks">Find Connections</a></p>
+        <button type="button" class="btn">Sign Out</button>
+    </div>
+        <div class="profile">
+            <div class="banner">
+        </div>
+        <img src="images/jane-m.jpg" class="pic" alt="profile picture">
+        <h2 id="username">Jane Doe</h2>
+        <div class="loc">
+            <img src="images/map-marker.png" class="map" alt="location">
+            <h3>Portland</h3>
+        </div>
+        <ul>
+            <li>Developer | </li>
+            <li>Engineer | </li>
+            <li>Problem Solver</li>
+        </ul>
+        <p>Master of shadows and the Internet!</p>
+        <img src="images/gear.png" class="gear" alt="edit">
+        <h4 onclick="edit()">Edit profile</h4>
+    </div>
+    <div class="education">
+        <div class="banner2">
+            <h2 class="edu">Education</h2>
+        </div>
+        <h2 class="eduinfo">Coding Dojo-Full Stack Bootcamp</h2>
+        <h3 class="gray">Dec 2019 - Mar 2020</h3>
+        <h4>Triple black belt in Python, MERN and C#</h4>
+    </div>
+    <div class="connection">
+        <div class="banner3"> 
+            <p class="round">2</p>
+            <p class="requests">Connection Requests</p> 
+        </div>
+        <div class="waiting" id="waiting1">
+            <img src="images/todd-s.jpg" class="waitpic" alt="waiting"><h2 class="names">Todd E</h2> <img src="images/accept-circle.png" class="yesorno" alt="accept" id="yes1" onclick="rem()"><img src="images/close-circle.png" class="yesorno" alt="deny" id="deny1" onclick="rem()">
+        </div>
+        <div class="waiting2" id="waiting2">    
+            <img src="images/phil-s.jpg" class="waitpic" alt="waiting"><h2 class="names">Phil K</h2> <img src="images/accept-circle.png" class="yesorno" alt="accept" id="yes2" onclick="rem2()"><img src="images/close-circle.png" class="yesorno" alt="deny" id="deny2" onclick="rem2()">
+        </div>
+    </div>
+
+    <div class="yourconnections">
+        <div class="banner3">
+            <p class="round2">500+</p>
+            <p class="requests">Your Connections</p>
+        </div>
+        <div class=connections>
+            <img src="images/adrien-s.jpg" class="conpics" alt="connection"><p class="connames" >Adrien-D</p>
+            <img src="images/anne-s.jpg" class="conpics" alt="connection"><p class="connames" >Anne J</p>
+            <img src="images/alayne-s.jpg" class="conpics" alt="connection"><p class="connames" >Alyne T</p>
+            <img src="images/arry-s.jpg" class="conpics" alt="connection"><p class="connames" >Arry Y</p>
+        </div>
+        <div class="viewmore">
+            <h4><a href="*">View More</a></h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

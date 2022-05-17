@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <h1>Dojonary</h1>
+            <form>
+                <input type="text" placeholder="Search" name="search">
+            </form>
+            <button type="button" onclick= "login(this)">Login</button>
+        </div>
+            <div class="topOfPage">
+                <div class="top">
+                <div>
+                    <h1>ninja</h1>
+                    <h4>noun</h4>
+                    <h4 class="plural">Plural:<span>ninjas</span></h4>
+                    <button type="button" class="likes" onclick="alert('Ninja was liked')">13 Likes</button>
+                </div>
+                <div>
+                    <h3>A practitioner skilled in the <span>Japanese</span> art of <span>ninjitsu</span></h3>
+                </div>
+            </div>
+                <div class="topRight">
+                    <h1>Dojonary is defined by <span class="you">YOU</span></h1>
+                    <button type="button" class="define" onclick="hide(this)">Add definition</button>
+                </div>
+            </div>
+        <div class="bottom">
+            <div>
+                <h1>ninja</h1>
+                <h4>noun</h4>
+                <h4>Plural <span>ninjas</span></h4>
+                <button type="button" class="likes" onclick="alert('Ninja was liked')">37 Likes</button>
+            </div>
+            <div>
+                <h3>A <span>programmer</span> who breaks down problems with <span>zen</span>-like focus</h3>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>

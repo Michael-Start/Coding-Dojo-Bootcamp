@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+#navbar{
+    display: flex;
+    height: 100px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.nav{
+    color: white;
+    margin-right: 20px;
+}
+
+.navlinks{
+    color: white;
+    text-decoration: none;
+}
+
+.btn{
+    margin-left: 300px;
+    color: white;
+    background-color: #17a2b8;
+    height: 30px;
+    width: 75px;
+}
+
+.profile {
+    height: 320px;
+    width: 400px;
+    margin-left: 125px;
+    margin-top: 20px;
+    background-color: white;
+    border: solid gray 2px;
+}
+
+.banner {
+    height:100px;
+    background-color: #17a2b8;
+}
+
+.pic { 
+    border-radius: 100%;
+    margin-left: 15px;
+    position: absolute;
+    top: 150px;
+    border: solid white 4px;
+    height: 120px;
+}
+
+.loc{
+    display: flex;
+    display: inline-block;
+}
+
+.map{
+    height: 20px;
+    width: 15px;
+    margin-left: 15px;
+}
+
+h3{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+h2{
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.gear{
+    margin-left: 15px;
+    height: 15px;
+}
+
+h4{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: small;
+}
+
+.education{
+    height: 225px;
+    width: 400px;
+    border: solid gray 2px;
+    margin-left: 125px;
+    margin-top: 20px;
+}
+
+
+.banner2{
+    background-color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.edu{
+    color: white;
+    margin-bottom: 35px;
+}
+
+.eduinfo{
+    margin-top: 10px;
+    font-size: medium;
+}
+
+.gray{
+    color: gray;
+    margin-left: 20px;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.connection{
+    border: solid grey 2px;
+    height: 215px;
+    width: 250px;
+    position: absolute; 
+    top: 120px;
+    right: 245px;
+}
+
+
+.banner3 {
+    background-color: black;
+    height: 30px;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.round{
+    color: black;
+    background-color: gray;
+    height: 20px;   
+    width: 25px;
+    border-radius: 15px;
+    justify-items: center;
+    text-align: center;
+}
+
+.waiting, .waiting2{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 5px;
+}
+
+
+.requests{
+    color: white;
+    font-size:small;
+}
+
+.waitpic{
+    height: 50px;
+    border-radius: 100%;
+    margin-left: 10px;
+    border: solid black 2px;
+}
+
+.names{
+    font-size: small;
+    position: relative;
+    top: -40px;
+}
+
+.yesorno{
+    height: 35px;
+}
+
+.yourconnections{
+    height: 290px;
+    width: 250px;
+    border: solid gray 2px;
+    margin-top: 30px;
+    position: absolute;
+    right: 245px;
+    top: 435px;
+}
+
+.round2{
+    color: black;
+    background-color: gray;
+    height: 20px;   
+    width: 40px;
+    border-radius: 15px;
+    justify-items: center;
+    text-align: center;
+}
+
+.conpics{
+    border-radius: 100%;
+    height: 30px;
+    margin-left: 10px;
+    border: solid black 2px;
+}
+
+.connames{
+    position: relative;
+    bottom: 30px;
+    left: 50px;
+    margin-bottom: -10px;
+}
+
+.viewmore{
+    border: solid gray 2px;
+    height: 48px;
+    width: 248px;
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+}
