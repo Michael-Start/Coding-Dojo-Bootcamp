@@ -17,7 +17,7 @@ for i in range(1,101):
 #That sucker's huge
 total=0
 for i in range(1, 500001, 2):
-    total = i + total
+    total += i
 print(total)
 
 #Countdown by 4

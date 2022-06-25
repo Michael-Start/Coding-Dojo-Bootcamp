@@ -22,8 +22,8 @@ class BankAccount:
         else:
             self.balance = self.balance -5
             print(f"Available balance ${self.balance}")
-            print(f"Withdraw amount ${withdraw} Insuffiecient funds. A charge of $5.00 has been applied")
-            print(f"Avaialbe balance ${self.balance}")
+            print(f"Withdraw amount ${withdraw} Insufficient funds. A charge of $5.00 has been applied")
+            print(f"Available balance ${self.balance}")
         return self
 
     def account_info(self):
