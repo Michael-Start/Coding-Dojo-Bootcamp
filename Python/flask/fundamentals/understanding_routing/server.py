@@ -17,7 +17,7 @@ def sayhi(name):
 @app.route('/say/<num>/<word>')
 def repeat(num, word):
     print(word)
-    return str(word) * int(num)      #display a word a bunch of times
+    return str(word + ' ') * int(num)      #display a word a bunch of times
 
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
     app.run(debug=True)    # Run the app in debug mode.
