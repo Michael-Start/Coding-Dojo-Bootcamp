@@ -8,7 +8,7 @@ def home():
 @app.route('/<int:x>')
 def vartable(x):
 
-    return render_template('index.html')
+    return render_template('index.html', x=x)
 
 if __name__ == "__main__":
     app.run(debug=True)
