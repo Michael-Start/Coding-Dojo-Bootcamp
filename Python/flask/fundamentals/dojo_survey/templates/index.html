@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style/bootstrap.css')}}">
+    <title>Dojo Survy</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="jumbotron">Dojo Survey</h1>
+        <form action='/create' method='post'>
+        <div>
+            <label for='name'>Your Name:</label>
+            <input type="text" name = 'name'>
+        </div>
+        <div>
+            <label for="dojo">Dojo Location: <select name="location" id="">
+                <option value ='chicago'>Chicago</option>
+                <option value ='seattle'>Seattle</option>
+                <option value = 'san jose'>San Jose</option>
+                <option value ='online'>Online</option>
+            </select></label>
+        </div>
+        <label for="favlang">Favorite Language
+            <select name="language" id="">
+                <option value="html">HTML</option>
+                <option value="c#">C#</option>
+                <option value="python">Python</option>
+                <option value="javascript">Javascript</option>
+            </select>
+            </label>
+            <div>
+                <div><label for='comment'>Additional Comments (optional)</label></div>
+                <textarea name = 'comment' rows ='5' cols = '20'></textarea>
+            </div>
+        <input type="submit" value="Submit" class="btn">
+
+    </form>
+    </div>
+</body>
+</html>
