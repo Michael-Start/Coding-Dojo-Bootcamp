@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.css') }}">
+    <title>Counter</title>
+</head>
+<body>
+    <div class = container>
+        <h1>Counter</h1>
+        <h2>Number of times you've been here!</h2>
+        <h3>This many times {{session['x']}}!</h3>
+        <button class=btn><a href="/destroy_session">Reset</a></button>
+        <button class =btn><a href="/add_two">Add Two!</a></button>
+    </div>
+</body>
+</html>
