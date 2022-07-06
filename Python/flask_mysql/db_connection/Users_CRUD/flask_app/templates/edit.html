@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Edit User {{user.id}}</h1>
+    <div class ='show'>
+        <h2>Current first name</h2>
+        <p>{{user.first_name}}</p>
+        <h2>Current Last Name</h2>
+        <p>{{user.last_name}}</p>
+        <h2>Current Email</h2>
+        <p>{{user.email}}</p>
+    </div>
+    <form action="/edit/{{user.id}}" method ='POST'>
+        <div>
+            <input type="hidden" name ='id' value = {{user.id}}>
+        </div>
+        <div>
+            <label for="first_name">Updated First Name</label>
+            <input type="text" name = 'first_name' value = '{{user.first_name}}'>
+        </div>
+        <div>
+            <label for="last_name">Updated Last Name</label>
+            <input type="text" name = last_name value ='{{user.last_name}}'>
+        </div>
+        <div>
+            <label for="email">Updated Email</label>
+            <input type="text" name =email value = '{{user.email}}'>
+        </div>
+        <input type="submit" value="Update">
+    </form>
+    
+    <a href="/">Home | </a><a href="/delete/{{user.id}}">Delete | </a><a href="/show/{{user.id}}">Show</a>
+</body>
+</html>
