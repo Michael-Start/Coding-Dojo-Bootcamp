@@ -11,7 +11,7 @@
     <form action="/create_ninja" method = 'POST'>
         <div>
             <label for="dojo">Dojo:</label>
-            <select name="dojo">
+            <select name="dojo_id">
                 {% for dojo in dojos%}
                     <option value = '{{dojo.id}}'>{{dojo.name}}</option>
                 {% endfor %}
@@ -28,8 +28,13 @@
         <div>
             <label for="age">Age: </label>
             <input type="text" name ='age'>
+            
         </div>
-        <input type="submit" value="Create Ninja">
+        <div>
+            <label for="email">email</label>
+            <input type="text" name ='email'>
+        </div>
+        <input type="submit" value="create ninja">
     </form>
     <a href="/dojos">Dojos</a>
 </body>
