@@ -1,4 +1,5 @@
-from flask_app.models.dojos import Dojo, Ninja
+from flask_app.models.dojos import Dojo
+from flask_app.models.ninjas import Ninja
 from flask_app import app
 from flask import render_template, redirect, request
 
@@ -15,7 +16,7 @@ def location(id):
     data ={
         'id' : id
     }
-    return render_template('location.html', dojo = Dojo.dojo_ninjas(data)) #make a class method to display all ninjas at the dojo
+    return render_template('location.html', dojo = Dojo.dojo_ninjas(data)) 
 
 @app.route('/new_ninja')
 def new_ninja():
@@ -23,11 +24,10 @@ def new_ninja():
 
 @app.route('/create_ninja', methods=['POST'])
 def add_ninja():
-    data = {
-    'first_name' : request.form['first_name'],
-    'last_name' : request.form['last_name'],
-    'age' : request.form['age'],
-    'dojo' : request.form['dojo.id']
-    }
-    Ninja.new_ninja(data)
-    return redirect('/location/<int:id>')
+    Ninja.new_ninja(request.form)
+    return redirect('/')
+
+@app.route('/new_dojo', methods =['POST'])
+def add_dojo():
+    Dojo.new_dojo(request.form)
+    return redirect('/')

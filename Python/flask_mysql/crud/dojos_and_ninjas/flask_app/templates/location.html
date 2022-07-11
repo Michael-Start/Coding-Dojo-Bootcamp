@@ -17,16 +17,16 @@
             </tr>
         </thead>
         <tbody>
-        {% for ninja in ninjas %}
+        {% for ninja in dojo.ninjas %}
         <tr>
-            <td>{{ninjas.first_name}}</td>
-            <td>{{ninjas.last_name}}</td>
-            <td>{{ninjas.age}}</td>
+            <td>{{ninja.first_name}}</td>
+            <td>{{ninja.last_name}}</td>
+            <td>{{ninja.age}}</td>
         </tr>
-        </tbody>
         {% endfor %}
+        </tbody>
 
     </table>
-    <a href="/dojos"></a>
+    <a href="/dojos">Dojos</a>
 </body>
 </html>
