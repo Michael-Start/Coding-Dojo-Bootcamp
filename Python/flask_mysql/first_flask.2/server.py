@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from flask import Flask, render_template, redirect, request
 # import the class from friend.py
 from friend import Friend
@@ -24,3 +25,19 @@ def create_friend():
 if __name__ == "__main__":
     app.run(debug=True)
 
+=======
+from flask import Flask, render_template
+# import the class from friend.py
+from friend import Friend
+app = Flask(__name__)
+@app.route("/")
+def index():
+    # call the get all classmethod to get all friends
+    friends = Friend.get_all()
+    print(friends)
+    return render_template("index.html", all_friends = friends)
+            
+if __name__ == "__main__":
+    app.run(debug=True)
+
+>>>>>>> e7d0478fbf1ab043623e4921430e41c0d5112a08

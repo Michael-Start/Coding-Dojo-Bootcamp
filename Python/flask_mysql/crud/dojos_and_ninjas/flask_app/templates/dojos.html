@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,4 +26,33 @@
         <a href="/new_ninja">Add Ninja</a>
     </div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Dojos</title>
+</head>
+<body>
+    <div>
+        <h1>New Dojo</h1>
+        <form action="/new_dojo" method = 'POST'>
+            <label for="city">City</label>
+            <input type="text" name = city>
+            <input type="submit" value = 'Create'>
+        </form>
+    </div>
+    <div>
+        <h1>All Current Dojos</h1>
+        {%for city in dojos%}
+            <ul>
+                <a href="/location/{{city.id}}">{{city.name}}</a>
+            </ul>
+            {% endfor %}
+        <a href="/new_ninja">Add Ninja</a>
+    </div>
+</body>
+>>>>>>> e7d0478fbf1ab043623e4921430e41c0d5112a08
 </html>
