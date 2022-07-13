@@ -1,5 +1,7 @@
 from flask import Flask, render_template ,redirect , request
 from users import User
+from flask_bcrypt import Bcrypt
+bcrypt = Bcrypt(app)
 
 app = Flask(__name__)
 

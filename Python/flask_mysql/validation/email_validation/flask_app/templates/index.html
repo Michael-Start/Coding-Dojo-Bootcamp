@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <form action="add_email"  method = POST>
+                <div>
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <h2>Invalid</h2>
+                        {% for message in messages %}
+                            <p>{{message}}</p>
+                        {% endfor %}
+                        {% endif %}
+                        {% endwith %}
+                    </div>
+                <label for="email">Email:</label>
+                <input type="text" name = 'email'>
+                <input type="submit" value="submit">
+            </form>
+            <a href="/list">List of emails</a>
+        </div>
+    </body>
+</html>
